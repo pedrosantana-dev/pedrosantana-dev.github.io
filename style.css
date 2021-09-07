@@ -34,9 +34,8 @@ html {
   justify-content: space-between;
 }
 .navbar .logo a {
-  position: relative;
   color: #fff;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
   padding-right: 10px;
 }
@@ -47,19 +46,16 @@ html {
 .navbar.sticky .logo a span {
   color: #fff;
 }
-/* .navbar .logo a .logo-cursor {
-  position: absolute;
-  width: 5px;
-  height: 100%;
-  bottom: 0;
-  right: 0;
+.navbar .logo a .logo-cursor {
+  display: inline-block;
+  margin-left: 5px;
   background: crimson;
   border-radius: 1px;
   animation: cursor 1s infinite;
 }
 .navbar.sticky .logo a .logo-cursor {
   background: #fff;
-} */
+}
 .navbar .menu li {
   list-style: none;
   display: inline-block;
@@ -169,7 +165,12 @@ html {
 section {
   padding: 100px 0;
 }
-.about, .services, .skills, .teams, .contact, footer {
+.about,
+.services,
+.skills,
+.teams,
+.contact,
+footer {
   font-family: "Poppins", sans-serif;
 }
 .about .about-content,
@@ -256,7 +257,8 @@ section .title::after {
 }
 
 /* estilo da section servicos */
-.services, .teams {
+.services,
+.teams {
   color: #fff;
   background: #111;
 }
@@ -359,25 +361,25 @@ section .title::after {
   top: 0;
   background: crimson;
 }
-.skills-content .right .html::before {  
+.skills-content .right .html::before {
   width: 90%;
 }
-.skills-content .right .css::before {  
+.skills-content .right .css::before {
   width: 60%;
 }
-.skills-content .right .js::before {  
+.skills-content .right .js::before {
   width: 75%;
 }
-.skills-content .right .node::before {  
+.skills-content .right .node::before {
   width: 70%;
 }
-.skills-content .right .angular::before {  
+.skills-content .right .angular::before {
   width: 50%;
 }
-.skills-content .right .mysql::before {  
+.skills-content .right .mysql::before {
   width: 70%;
 }
-.skills-content .right .mongodb::before {  
+.skills-content .right .mongodb::before {
   width: 40%;
 }
 
@@ -507,7 +509,7 @@ section .title::after {
   outline: none;
   padding: 0 15px;
   font-size: 17px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .contact .right form .textarea textarea {
   margin-top: 10px;
@@ -548,12 +550,6 @@ footer span a:hover {
   text-decoration: underline;
 }
 
-
-
-
-
-
-
 /* responsive media query start */
 @media (max-width: 1300px) {
   .home .max-width {
@@ -567,7 +563,7 @@ footer span a:hover {
   }
 }
 
-@media (max-width: 996px) {
+@media (max-width: 997px) {
   .max-width {
     padding: 0 50px;
   }
@@ -610,9 +606,6 @@ footer span a:hover {
     font-size: 23px;
     padding: 10px 30px;
   }
-  .max-width {
-    max-width: 800px;
-  }
   .about .about-content .column {
     width: 100%;
   }
@@ -649,7 +642,7 @@ footer span a:hover {
     font-size: 20px;
   }
   .services .serv-content .card {
-    width: 100%
+    width: 100%;
   }
 }
 
@@ -659,5 +652,28 @@ footer span a:hover {
   }
   .home .home-content .text-3 {
     font-size: 27px;
+  }
+}
+
+@media (max-width: 412px) {
+  .navbar .logo a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 404px) {
+  section .title::after {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 371px) {
+  section .title::after {
+    font-size: 17px;
+  }
+}
+@media (max-device-height: 480px) {
+  .menu {
+    overflow: auto;
   }
 }

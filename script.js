@@ -35,12 +35,12 @@ $(document).ready(function () {
         backSpeed: 60,
         loop: true
     });
-    var typed = new Typed(".logo-animate", {
-        strings: ["function () {", "async function"],
-        typeSpeed: 150,
-        backSpeed: 80,
-        loop: true
-    });
+    // var typed = new Typed(".logo-animate", {
+    //     strings: ["function () {", "async function"],
+    //     typeSpeed: 150,
+    //     backSpeed: 80,
+    //     loop: true
+    // });
 
     // owl carousel script
     $('.carousel').owlCarousel({
